@@ -1,0 +1,21 @@
+<html><head>
+<script>
+function loademup() {
+  var a = 0;
+  var balance = 0.0;
+  var interest = .05;
+  var s = "<table><tr><th>Month</th><th>Balance</th></tr>"
+  for (a = 1; a<=20; a++) {
+    balance = balance + 50.; // Saving $50 each month
+	balance = Math.round(balance*100 + balance* 100 * interest/12)/100;
+    s = s + "<tr><td>" + a + "</td><td>" + balance + "</td></tr>";
+  }
+  s = s + "</table>"
+  document.getElementById("mytable").innerHTML=s;
+}
+</script>
+</head>
+<body>
+<button onclick="loademup();">Click me</button>
+<p id="mytable"></p>
+</body>

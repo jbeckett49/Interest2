@@ -1,0 +1,1 @@
+Copyright: You have a right to copy this and use it any way you want.
